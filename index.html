@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Coin Converter</title>
+  </head>
+  <body>
+    <div class="containter">
+      <header>  
+        <h1 class="title">Game Coin Converter</h1>
+      </header>
+      
+      <main>
+        <div id="app"></div>
+
+        <div class="arcade-screen">
+          <div class="screen-content">
+            <h2>Esta pagina funciona como convertor de monedas de videojuegos a pesos argentinos</h2>
+            <p>Seleccione el juego y la cantidad de monedas que desea convertir</p>
+
+            <form class="form" onsubmit="event.preventDefault(); convertAndDisplay();">
+              <div class="form-group">
+                <label for="game">Juego: </label>
+                <select name="game" id="game">
+                  <option value="robux">Robux</option>
+                  <option value="gemas">Gemas Clash Royale</option>
+                  <option value="pavos">Pavos</option>
+                </select>
+              </div>
+            
+              <div class="form-group">
+                <label for="amount">Cantidad: </label>
+                <input type="number" name="amount" id="amount" placeholder="Moneda virtual" required />
+              </div>
+              
+              <button type="submit">Convertir</button>
+              <div id="result" class="result-display">Resultado: </div>
+            </form>            
+          </div>
+        </div>
+        
+      </main>
+      
+      <footer>
+        <p class="footer-text">Made with <span class="pixel-heart">❤️</span> by 'Page not found'</p>
+      </footer>
+    </div>
+    <script src="./src/main.js"></script>
+  </body>
+</html>
