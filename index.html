@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/public/coin.png" />
@@ -9,18 +9,41 @@
     <title>Game Coin Converter</title>
   </head>
   <body>
-    <div class="containter">
+    <div class="container">
       <header>  
         <h1 class="title">Game Coin Converter</h1>
+        <p class="subtitle">Tu herramienta para convertir monedas virtuales a pesos argentinos</p>
       </header>
       
       <main>
-        <div id="app"></div>
+        <div class="hero-section">
+          <h2>¿Qué es Game Coin Converter?</h2>
+          <p class="description">
+            Game Coin Converter es una herramienta gratuita que te permite convertir fácilmente las monedas virtuales 
+            de tus juegos favoritos a pesos argentinos. Ya sea que estés planeando una compra o simplemente quieras 
+            saber el valor real de tus monedas virtuales, ¡estamos aquí para ayudarte!
+          </p>
+        </div>
+
+        <div class="features">
+          <div class="feature-card">
+            <h3>🎮 Juegos Soportados</h3>
+            <p>Robux, Gemas de Clash Royale, Pavos de Fortnite y más...</p>
+          </div>
+          <div class="feature-card">
+            <h3>💱 Conversión en Tiempo Real</h3>
+            <p>Valores actualizados según el mercado actual</p>
+          </div>
+          <div class="feature-card">
+            <h3>💰 Fácil de Usar</h3>
+            <p>Interfaz intuitiva y conversión instantánea</p>
+          </div>
+        </div>
 
         <div class="arcade-screen">
           <div class="screen-content">
-            <h2>Esta pagina funciona como convertor de monedas de videojuegos a pesos argentinos</h2>
-            <p>Seleccione el juego y la cantidad de monedas que desea convertir</p>
+            <h2>¡Prueba el Convertidor!</h2>
+            <p>Selecciona el juego y la cantidad de monedas que deseas convertir</p>
 
             <form class="form" onsubmit="event.preventDefault(); convertAndDisplay();">
               <div class="form-group">
@@ -43,6 +66,14 @@
           </div>
         </div>
         
+        <div class="how-to-use">
+          <h2>¿Cómo Funciona?</h2>
+          <ol>
+            <li>Selecciona el juego de tu elección</li>
+            <li>Ingresa la cantidad de monedas virtuales</li>
+            <li>¡Obtén el valor en pesos argentinos al instante!</li>
+          </ol>
+        </div>
       </main>
       
       <footer>

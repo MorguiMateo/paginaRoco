@@ -10,7 +10,7 @@ body, html {
   line-height: 1.5;
 }
 
-.containter {
+.container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -22,7 +22,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 3rem;
 }
 
 .title {
@@ -33,11 +33,91 @@ main {
   text-shadow: 0 0 10px #ff00ff;
 }
 
+.subtitle {
+  font-size: 1rem;
+  color: #00ffff;
+  margin-top: 1rem;
+  text-shadow: 0 0 5px #00ffff;
+}
+
 header {
   background-color: black;
   border-bottom: 4px solid #ff00ff;
   padding: 1.5rem;
   text-align: center;
+}
+
+.hero-section {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.description {
+  font-size: 0.8rem;
+  line-height: 1.8;
+  color: #00ff00;
+  margin: 2rem 0;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.feature-card {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #00ffff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.feature-card h3 {
+  color: #ff00ff;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card p {
+  font-size: 0.7rem;
+  margin: 0;
+}
+
+.how-to-use {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #00ff00;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.how-to-use h2 {
+  color: #ff00ff;
+  margin-bottom: 1.5rem;
+}
+
+.how-to-use ol {
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
+.how-to-use li {
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  color: #00ffff;
 }
 
 footer {
@@ -47,6 +127,7 @@ footer {
   text-align: center;
   color: #00ff00;
   font-size: 0.7rem;
+  margin-top: 3rem;
 }
 
 h2 {
