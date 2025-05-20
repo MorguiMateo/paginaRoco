@@ -1,7 +1,7 @@
 const gemas = 0.0125
 const robux = 0.0125
 const pavos = 0.009
-
+const dolarToPesos = 1300
 
 
 function convert(game, amount) {
@@ -16,11 +16,11 @@ function convert(game, amount) {
 
 function convertArs(game, amount) {
   if (game === "gemas") {
-    return amount * (gemas * 1200)
+    return amount * (gemas * dolarToPesos)
   } else if (game === "robux") {
-    return amount * (robux * 1200)
+    return amount * (robux * dolarToPesos)
   } else if (game === "pavos") {
-    return amount * (pavos * 1200)
+    return amount * (pavos * dolarToPesos)
   }
 }
 
@@ -38,7 +38,7 @@ function convertAndDisplay() {
   const result = convert(game, amount)
   const resultArs = convertArs(game, amount)
 
-  resultElement.textContent = `Dolares: ${amount} ${game} = $${result.toFixed(2)} USD \n Pesos: ${amount} ${game} = $${resultArs.toFixed(4)} ARS`
+  resultElement.textContent = `Dolares: ${amount} ${game} = $${result.toFixed(2)} USD \n Pesos: ${amount} ${game} = $${resultArs.toFixed(2)} ARS`
 
 
 
