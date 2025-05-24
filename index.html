@@ -12,66 +12,66 @@
     <div class="container">
       <header>  
         <h1 class="title">Game Coin Converter</h1>
-        <p class="subtitle">Tu herramienta para convertir monedas virtuales a pesos argentinos</p>
+        <p class="subtitle">Your tool for converting virtual currencies to Argentine pesos</p>
       </header>
       
       <main>
         <div class="hero-section">
-          <h2>¿Qué es Game Coin Converter?</h2>
+          <h2>What is Game Coin Converter?</h2>
           <p class="description">
-            Game Coin Converter es una herramienta gratuita que te permite convertir fácilmente las monedas virtuales 
-            de tus juegos favoritos a pesos argentinos. Ya sea que estés planeando una compra o simplemente quieras 
-            saber el valor real de tus monedas virtuales, ¡estamos aquí para ayudarte!
+            Game Coin Converter is a free tool that allows you to easily convert the virtual currencies 
+            from your favorite games to Argentine pesos. Whether you're planning a purchase or just want to know the 
+            real value of your virtual currencies, we're here to help!
           </p>
         </div>
 
         <div class="features">
           <div class="feature-card">
-            <h3>🎮 Juegos Soportados</h3>
-            <p>Robux, Gemas de Clash Royale, Pavos de Fortnite y más...</p>
+            <h3>🎮 Supported Games.</h3>
+            <p>Robux, Clash Royale Gems, Fortnite V-Bucks, and more...</p>
           </div>
           <div class="feature-card">
-            <h3>💱 Conversión en Tiempo Real</h3>
-            <p>Valores actualizados según el mercado actual</p>
+            <h3>💱 Real-Time Conversion.</h3>
+            <p>Values updated according to the current market</p>
           </div>
           <div class="feature-card">
-            <h3>💰 Fácil de Usar</h3>
+            <h3>💰 Easy to Use.</h3>
             <p>Interfaz intuitiva y conversión instantánea</p>
           </div>
         </div>
 
         <div class="arcade-screen">
           <div class="screen-content">
-            <h2>¡Prueba el Convertidor!</h2>
-            <p>Selecciona el juego y la cantidad de monedas que deseas convertir</p>
+            <h2>¡Try the Converter!</h2>
+            <p>Select the game and the amount of coins you want to convert.</p>
 
             <form class="form" onsubmit="event.preventDefault(); convertAndDisplay();">
               <div class="form-group">
-                <label for="game">Juego: </label>
+                <label for="game">Games: </label>
                 <select name="game" id="game">
                   <option value="robux">Robux</option>
-                  <option value="gemas">Gemas Clash Royale</option>
-                  <option value="pavos">Pavos</option>
+                  <option value="gemas">Clash Royale Gems</option>
+                  <option value="pavos">V-Bucks</option>
                 </select>
               </div>
             
               <div class="form-group">
-                <label for="amount">Cantidad: </label>
-                <input type="number" name="amount" id="amount" placeholder="Moneda virtual" required />
+                <label for="amount">Amount: </label>
+                <input type="number" name="amount" id="amount" placeholder="Virtual currency" required />
               </div>
               
-              <button type="submit">Convertir</button>
-              <div id="result" class="result-display">Resultado: </div>
+              <button type="submit">Convert</button>
+              <div id="result" class="result-display">Result: </div>
             </form>            
           </div>
         </div>
         
         <div class="how-to-use">
-          <h2>¿Cómo Funciona?</h2>
+          <h2>How Does It Work?</h2>
           <ol>
-            <li>Selecciona el juego de tu elección</li>
-            <li>Ingresa la cantidad de monedas virtuales</li>
-            <li>¡Obtén el valor en pesos argentinos al instante!</li>
+            <li>Select the game of your choice</li>
+            <li>Enter the amount of virtual coins</li>
+            <li>¡Get the value in Argentine pesos instantly!</li>
           </ol>
         </div>
       </main>
