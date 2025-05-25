@@ -8,12 +8,16 @@ body, html {
   color: #00ff00;
   font-family: 'Press Start 2P', cursive;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin-top: 80px; /* Cambiado de padding-top a margin-top */
+  position: relative;
+  width: 100%;
 }
 
 main {
@@ -23,6 +27,8 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 3rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .title {
@@ -223,4 +229,77 @@ button:hover {
 .footer-text {
   margin: 0;
   font-size: 0.6rem;
+}
+
+/* Header Styles */
+.main-header {
+    background-color: #121212;
+    border-bottom: 4px solid #ff00ff;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.site-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.7rem;
+    transition: all 0.3s ease;
+}
+
+.login-btn {
+    background-color: transparent;
+    border: 2px solid #00ff00;
+    color: #00ff00;
+}
+
+.login-btn:hover {
+    background-color: #00ff00;
+    color: black;
+    text-shadow: none;
+}
+
+.register-btn {
+    background-color: #ff00ff;
+    border: none;
+    color: black;
+}
+
+.register-btn:hover {
+    background-color: #00ffff;
+    text-shadow: none;
 }
