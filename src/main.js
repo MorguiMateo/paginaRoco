@@ -1,3 +1,5 @@
+import { createHeader } from './components/Header.js';
+
 const gemas = 0.0125
 const robux = 0.0125
 const pavos = 0.009
@@ -31,16 +33,19 @@ function convertAndDisplay() {
   const resultElement = document.getElementById("result")
   
   if (isNaN(amount)) {
-    resultElement.textContent = "Resultado: Ingrese una cantidad válida"
+    resultElement.textContent = "Result: Please enter a valid amount"
     return
   }
   
   const result = convert(game, amount)
   const resultArs = convertArs(game, amount)
 
-  resultElement.textContent = `Dolares: ${amount} ${game} = $${result.toFixed(2)} USD \n Pesos: ${amount} ${game} = $${resultArs.toFixed(2)} ARS`
+  resultElement.textContent = `Dollars: ${amount} ${game} = $${result.toFixed(2)} USD \n Pesos: ${amount} ${game} = $${resultArs.toFixed(2)} ARS`
 
 
 
 }
+
+// Add header to the page
+document.body.prepend(createHeader());
 
